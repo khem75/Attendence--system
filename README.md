@@ -26,9 +26,5 @@ This system captures and recognizes faces to log attendance securely and efficie
 - **Languages**: Python, HTML, CSS
 - **Libraries**: OpenCV, NumPy, Flask
 - **ML Model**: LBPH (Local Binary Pattern Histogram)
-- **Hardware**: Logitech webcam / Jetson Nano
-
----
-
-## 🗂️ Project Structure
+- **Hardware**: Logitech webcam / Jetson 
 
