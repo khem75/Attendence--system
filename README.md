@@ -1,30 +1,81 @@
-# 🎯 Face Detection Attendance System
+🎯 Face Detection Attendance System
+An AI-powered attendance system that marks user presence through real-time facial recognition. Built with Python, OpenCV, and Flask, it supports deployment on Jetson Nano and standard webcams like Logitech C270.
 
-An AI-powered attendance system that marks user presence through facial recognition in real time. Built using **Python**, **OpenCV**, and **Flask**, with deployment support for **Jetson Nano** and Logitech webcams.
+📌 Project Overview
+This system captures and identifies faces to securely and efficiently record attendance. It offers a user-friendly web interface and is ideal for use in classrooms, offices, or labs.
 
----
+🚀 Features
+🧠 Real-Time Face Detection: Utilizes Haarcascade classifiers to detect faces live via webcam.
 
-## 📌 Project Overview
+🪞 Face Recognition: Implements the LBPH (Local Binary Pattern Histogram) algorithm for accurate recognition.
 
-This system captures and recognizes faces to log attendance securely and efficiently. It offers a simple web interface for interaction and can be deployed in classrooms, offices, or labs.
+🕒 Auto Attendance Logging: Logs user presence along with date and time in a local CSV or database.
 
----
+🌐 Web Interface: Clean Flask-based frontend built with HTML/CSS.
 
-## 🚀 Features
+🎥 Camera Support: Compatible with webcams like Logitech C270.
 
-- Real-time face detection using Haarcascade
-- Facial recognition using LBPH algorithm
-- Automatic attendance logging with date & time
-- Web interface using Flask (HTML/CSS templates)
-- Camera support (e.g., Logitech C270)
-- Deployable on Jetson Nano
+🖥️ Edge Deployment: Can be deployed on low-cost hardware like NVIDIA Jetson Nano.
 
----
+🧰 Technology Stack
+Languages: Python, HTML, CSS
 
-## 🧰 Tech Stack
+Libraries: OpenCV, NumPy, Flask
 
-- **Languages**: Python, HTML, CSS
-- **Libraries**: OpenCV, NumPy, Flask
-- **ML Model**: LBPH (Local Binary Pattern Histogram)
-- **Hardware**: Logitech webcam / Jetson 
+Machine Learning Model: LBPH (Local Binary Pattern Histogram)
 
+Hardware: Logitech webcam / Jetson Nano
+
+⚙️ Getting Started
+✅ Prerequisites
+Python 3.x
+
+pip (Python package installer)
+
+A compatible webcam (e.g., Logitech C270)
+
+Haarcascade file (haarcascade_frontalface_default.xml)
+
+🔧 Installation
+bash
+Copy
+Edit
+git clone https://github.com/khem75/face-attendance-system.git
+cd face-attendance-system
+pip install -r requirements.txt
+python app.py
+🧠 How It Works
+The camera captures the user’s face.
+
+Haarcascade detects the face in the frame.
+
+LBPH compares the detected face with trained data.
+
+If matched, attendance is logged with name, date, and time.
+
+The Flask web app displays status and history.
+
+📂 Project Structure
+graphql
+Copy
+Edit
+face-attendance-system/
+│
+├── app.py                 # Flask app entry point
+├── dataset/               # Collected training images
+├── trainer/               # Trained model (.yml file)
+├── static/                # CSS & frontend assets
+├── templates/             # HTML templates for Flask
+├── haarcascade/           # Haarcascade XML files
+├── attendance.csv         # Auto-generated attendance log
+├── requirements.txt       # Python dependencies
+💡 Deployment on Jetson Nano
+Ensure OpenCV and Flask are installed (pip3 install opencv-python flask)
+
+Use lightweight image resizing for better performance
+
+Optimize face detection frame rate
+
+👤 Developer
+Developed by Khem Raj Joshi
+Connect on: Facebook | LinkedIn
