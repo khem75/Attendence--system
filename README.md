@@ -74,7 +74,7 @@ Ensure OpenCV and Flask are installed (pip3 install opencv-python flask)
 
 Use lightweight image resizing for better performance
 
-Optimize face detection frame rate
+Optimize face detection 
 
 👤 Developer
 Developed by Khem Raj Joshi
