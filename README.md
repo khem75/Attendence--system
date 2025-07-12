@@ -18,7 +18,7 @@ This system captures and identifies faces to securely and efficiently record att
 🖥️ Edge Deployment: Can be deployed on low-cost hardware like NVIDIA Jetson Nano.
 
 🧰 Technology Stack
-Languages: Python, HTML, CSS
+Languages: Python
 
 Libraries: OpenCV, NumPy, Flask
 
